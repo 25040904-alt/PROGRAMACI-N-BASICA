@@ -1,0 +1,18 @@
+#include<iostream>
+#include<windows.h>
+using namespace std;
+int main(){
+	SetConsoleOutputCP(CP_UTF8);
+	SetConsoleCP(CP_UTF8);
+	int minutos, horas, min2;
+	cout<<"Dame la cantidad de minutos a covertir: ";
+	cin>>minutos;
+	horas=minutos/60;
+	min2=minutos%60;
+	cout<<minutos<<" minutos equivale a "<<horas<<":"<<min2<<" horas\n";
+	printf("%2d minutos equivale a %02d:%02d horas",minutos, horas, min2);
+	
+	
+	
+	return 0;
+}
